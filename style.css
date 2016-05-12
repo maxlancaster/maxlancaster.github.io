@@ -4,8 +4,58 @@ html, body {
     height: 100%;
     max-width: 100%;
     background: #9c9;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     /*overflow-x: hidden;*/
-}	
+}
+
+#panel {
+    position: absolute;
+    z-index: 10;
+    width: 600px;
+    height: 350px;
+    background: #eee;
+    top: 50%;
+    left: 25%;
+    padding-left: 20px;
+    margin: -175px 0 0 -100px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+#panel h1 {
+	font-weight: 300;
+    font-size: 45px;
+    margin-bottom: .2em;
+}
+
+.panel-link {
+	display: block;
+	padding-top: 15px;
+	font-size: 1.4em;
+	text-decoration: none;
+	font-style: italic;
+	color: #0066cc;
+	float:left; clear:left
+}
+
+.panel-subtitle {
+	color: #000000;
+    font-size: 1.4em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.particles-js-canvas-el {
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	min-width:100%;
+	min-height:100%;
+	z-index:5;
+}
 
 #wrapper {
 	display: table;
@@ -27,7 +77,6 @@ html, body {
 
 #title {
 	font-size: 40px;
-	font-weight: bold;
 }
 
 #sidebar {
@@ -42,7 +91,6 @@ html, body {
 #links-header {
 	text-align: center;
 	font-size: 40px;
-	font-weight: bold;
 }
 
 #links-content {

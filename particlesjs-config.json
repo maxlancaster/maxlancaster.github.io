@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Max Lancaster</title>
-<link rel="stylesheet" href="style.css" />
-
-</head>
-<body>
-
-<div id="particles" class="particles-js-canvas-el"></div>
-
-<script src="libraries/node_modules/particles.js/particles.js"></script>
-
-<script type="text/javascript">particlesJS('particles', {
+{
   "particles": {
     "number": {
       "value": 80,
@@ -23,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#000000"
+      "value": "#ffffff"
     },
     "shape": {
       "type": "circle",
@@ -51,8 +36,8 @@
       }
     },
     "size": {
-      "value": 8,
-      "random": false,
+      "value": 3,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 40,
@@ -63,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#000000",
+      "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
@@ -86,11 +71,11 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
@@ -122,17 +107,4 @@
     }
   },
   "retina_detect": true
-});</script>
-
-<div id="panel">
-	<h1>Max Lancaster</h1>
-	<div class="panel-subtitle">Student at MIT</div>
-	<div class="panel-subtitle">Currently at: Salesforce.com</div>
-	<div class="panel-links">
-		<a class="panel-link" href="blog.html">blog</a>
-		<a class="panel-link" href="other-stuff/CV.pdf">resume</a>
-		<a class="panel-link" href="projects.html">projects</a>
-	</div>
-</div>
-</body>
-</html>
+}
