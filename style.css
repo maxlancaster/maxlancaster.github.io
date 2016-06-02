@@ -19,7 +19,7 @@ html, body {
     left: 25%;
     padding-left: 20px;
     margin: -175px 0 0 -100px;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
     z-index: 100;
 }
@@ -68,11 +68,15 @@ html, body {
     left:210px;
     background:#9c9;
     display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #main-content {
 	position: absolute;
 	left: 20px;
+	border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #title {
@@ -81,11 +85,18 @@ html, body {
 
 #sidebar {
     width:200px;
-    height:100%;
+    /*height:100%;*/
    	background:#c9c;	
     position: fixed;
     display: block;
-    top: 75px;
+    top: 80px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#posts {
+	border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #links-header {
@@ -111,6 +122,8 @@ html, body {
 	background: white;
     border: 2px solid black;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .post-image {
