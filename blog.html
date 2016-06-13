@@ -23,7 +23,7 @@
 			<div id="posts">
 				<div class="blog-post">
 					<h3 style=" margin-left:5px">Aruba <small>6/12/2016</small></h3>
-					<p style=" margin-left:5px">As promised, here's the post from Aruba. The trip was better than I could have imagined. It was my first time out of the country, first time at a tropical destination, and was just all around unforgettable. There's no way I can do justice to the trip with my words, so I'll let you see for yourself in the gallery I've put together. I built this gallery using <a href="https://github.com/blueimp/Bootstrap-Image-Gallery">Bootstrap Image Gallery</a>, which uses the Bootstrap framework to create a responsive gallery. Click Start below to launch the modal.</p>
+					<p style=" margin-left:5px">As promised, here's the post from Aruba. The trip was better than I could have imagined. It was my first time out of the country, first time at a tropical destination, and was just all around unforgettable. There's no way I can do justice to the trip with my words, so I'll let you see for yourself in the gallery I've put together. I built this gallery using <a href="https://github.com/blueimp/Bootstrap-Image-Gallery#disqus_thread">Bootstrap Image Gallery</a>, which uses the Bootstrap framework to create a responsive gallery. Click Start below to launch the modal.</p>
 					<div id="blueimp-gallery" class="blueimp-gallery">
 				    <!-- The container for the modal slides -->
 				    <div class="slides"></div>
@@ -59,7 +59,7 @@
 				</div>
 
 				<div id="links">
-				    <a href="graphics/room-view.jpg" style="margin-left:5px" title="the view from the room" data-gallery>
+				    <a href="graphics/room-view.jpg#disqus_thread" style="margin-left:5px" title="the view from the room" data-gallery>
 				        Start Gallery
 				    </a>
 				    <a href="graphics/mirror-pic.jpg" title="the crew for the week" data-gallery>
@@ -226,9 +226,28 @@
 				<p style=" margin-left:5px">I'm also planning on implementing the comments that you see below. Right now it's just a placeholder, but I plan to actually allow comments sometime soon.
 				</p>
 					<div class="callout">
-						<ul class="menu simple">
-						<li><a href="#">Comments: 3</a></li>
-						</ul>
+						<div id="disqus_thread"></div>
+						<script>
+						/**
+						* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+						* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+						*/
+						
+						var disqus_config = function () {
+						this.page.url = "http://maxlancaster.github.io/blog.html"; // Replace PAGE_URL with your page's canonical URL variable
+						// this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+						};
+						
+						(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+
+						s.src = 'https://maxlancaster.disqus.com/embed.js';
+
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 					</div>
 				</div>
 				<div class="blog-post">
@@ -379,6 +398,6 @@
 <script type="text/javascript" src="libraries/jquery/js/jquery-1.9.0.min.js"></script>
 <script src="libraries/Gallery-master/js/jquery.blueimp-gallery.min.js"></script>
 <script src="libraries/Bootstrap-Image-Gallery-master/js/bootstrap-image-gallery.min.js"></script>
-
+<script id="dsq-count-scr" type="text/javascript" src="https://maxlancaster.disqus.com/count.js" async></script>
 </body>
 </html>
