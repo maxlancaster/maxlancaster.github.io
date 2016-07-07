@@ -140,3 +140,10 @@ html, body {
 .post-content {
 	
 }
+
+.copyright {
+	text-align: center;
+	bottom: 10px;
+    width: 100%;
+    position: absolute;
+}
