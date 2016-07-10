@@ -4,7 +4,7 @@ html, body {
     /*height: 100%;*/
     /*max-width: 100%;*/
     background: #9c9;
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
     /*font-weight: 300;*/
     /*overflow-x: hidden;*/
 }
@@ -84,14 +84,19 @@ html, body {
 }
 
 #sidebar {
+    margin-top: 10px;
+    margin-left: 15px;
     width:200px;
     /*height:100%;*/
    	background:#c9c;	
     position: fixed;
     display: block;
-    top: 80px;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+#sidebar a {
+    color: black;
 }
 
 .callout {
@@ -116,10 +121,27 @@ html, body {
 #header {
 	position: relative;
 	display: block;
-	height: 75px;
 	background: white;
 	font-size: 60px;
 	font-weight: bold;
+}
+
+.header-image {
+    width:100%;
+    height: auto;
+    position: relative;
+}
+
+.header-image-container {
+    position: absolute;
+}
+
+.headshot {
+    top: 15px;
+    left: 15px;
+    position: fixed;
+    border: 1px solid white;
+    outline-color: white;
 }
 
 .blog-post {
