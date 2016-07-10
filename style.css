@@ -3,7 +3,7 @@ html, body {
     /*padding:0px;*/
     /*height: 100%;*/
     /*max-width: 100%;*/
-    background: #9c9;
+    background: lightcoral;
     font-family: 'Open Sans', sans-serif;
     /*font-weight: 300;*/
     /*overflow-x: hidden;*/
@@ -88,7 +88,7 @@ html, body {
     margin-left: 15px;
     width:200px;
     /*height:100%;*/
-   	background:#c9c;	
+   	background:#d8b652;	
     position: fixed;
     display: block;
     border-radius: 10px;
