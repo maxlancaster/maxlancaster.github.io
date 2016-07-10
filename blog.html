@@ -12,14 +12,13 @@
 </head>
 <body>
 
-<div id="wrapper">
+<!-- <div id="wrapper"> -->
 		<div id="header">
 			<!-- <a href="index.html">Max Lancaster</a> -->
-			<img class="header-image" src="graphics/boston-skyline-brassrat.png">
-			<a href="index.html"><img src="graphics/headshot.jpg" class="img-circle headshot" width="150" height="150"></a>
+			<img class="header-image" src="graphics/panorama-cut.jpeg">
 		</div>
-		<div id="main-content-wrapper">
-		<div id="main-content">		 
+		<!-- <div id="main-content-wrapper"> -->
+		<div id="main-content" class="col-xs-8">		 
 			<div class="title">
 				<div id="title">Blog</div>
 			</div>
@@ -417,9 +416,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 
-	<div id="sidebar">
+	<div id="right-sidebar" class="col-xs-2">
 		<div id="links-header">Links</div>
 		<div id="links-content">
 			<p><a href="other-stuff/CV.pdf">CV</a></p>
@@ -430,7 +429,10 @@
 			<p><a href="projects.html">Projects</a></p>
 		</div>
 	</div>
-</div>
+	<div id="left-sidebar" class="col-xs-2">
+		<a href="index.html"><img src="graphics/headshot.jpg" class="img-circle img-responsive headshot"></a>
+	</div>
+<!-- </div> -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="libraries/jquery/js/jquery-1.9.0.min.js"></script>
 <script src="libraries/Gallery-master/js/jquery.blueimp-gallery.min.js"></script>
