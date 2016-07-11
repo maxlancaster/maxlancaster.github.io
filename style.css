@@ -64,6 +64,7 @@ html, body {
 }
 
 #main-content {
+    margin-top:10px;
     left: 16%;
 	position: absolute;
 	border-radius: 4px;
@@ -120,8 +121,7 @@ html, body {
 	position: relative;
 	display: block;
 	background: white;
-	font-size: 60px;
-	font-weight: bold;
+	font-size: 80px;
 }
 
 .header-image {
@@ -132,6 +132,15 @@ html, body {
 
 .header-image-container {
     position: absolute;
+}
+
+.header-text {
+    top: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+    text-shadow: rgba(0,0,0,.2) 2px 6px 5px,rgba(255,255,255,.4) 0 -4px 30px;
 }
 
 .headshot {
@@ -148,6 +157,18 @@ html, body {
     margin-bottom: 20px;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+.blog-post p, h3 {
+    margin-left: 5px;
+}
+
+.blog-post video {
+    margin-bottom: 20px;
+    display: block; 
+    margin: 0 auto; 
+    border: 2px solid gray;
+    margin-bottom: 20px;
 }
 
 .post-image {
@@ -168,4 +189,26 @@ html, body {
 	bottom: 10px;
     width: 100%;
     position: absolute;
+}
+
+.scrollToTop{
+    width:12%; 
+    height:auto;
+    padding:10px; 
+    text-align:center; 
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    top:40%;
+    right:3%;
+    display:none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 100;
+    /*background: url('graphics/hand-up.jpg') no-repeat 0px 20px;*/
+}
+.scrollToTop:hover{
+    text-decoration:none;
 }
