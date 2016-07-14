@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="libraries/Gallery-master/css/blueimp-gallery.min.css">
 <link rel="stylesheet" href="libraries/Bootstrap-Image-Gallery-master/css/bootstrap-image-gallery.min.css">
-
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="libraries/jquery/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 
@@ -48,9 +50,10 @@
 					</p>
 
 					<div class="callout">
-						<ul class="menu simple">
-						<li><a href="#">Comments: 3</a></li>
-						</ul>
+						<a class="comments" onclick="loadDisqus($(this), 'erik-wahl', 'test-disqus');">
+							Show comments
+						</a>
+					   <!-- <a href="posts/1.html">Show Comments</a> -->
 					</div>
 				</div>
 				<div class="blog-post">
@@ -104,9 +107,9 @@
 						It was so sad when she had to leave me! I wish I could have come home with her and spent sometime in Attleboro with all of you. I think about everybody every day. I know I don't call as often as I should, but I miss all of my family and friends back home. Word on the streets is that Dad is going to try and come visit the weekend that Harry and G+P Lancaster are out here. Also, I think I've convinced Mom and Glenn to come visit for a long weekend in early August. Andddd Amanda is coming back out for a week after I finish work. For anybody wondering, I'm scheduled to finish work August 12th, and my flight home to Boston is booked for August 20th.. signing off for now. Love and miss you all. - Max
 					</p>
 					<div class="callout">
-						<ul class="menu simple">
-						<li><a href="#">Comments: 3</a></li>
-						</ul>
+						<a class="comments" onclick="loadDisqus($(this), 'erik-wahl', 'test-disqus');">
+							Show comments
+						</a>
 					</div>
 				</div>
 				<div class="blog-post">
@@ -344,7 +347,7 @@
 						*/
 						
 						var disqus_config = function () {
-						this.page.url = "http://maxlancaster.github.io/blog.html"; // Replace PAGE_URL with your page's canonical URL variable
+						this.page.url = "http://maxlancaster.me"; // Replace PAGE_URL with your page's canonical URL variable
 						// this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 						};
 						
@@ -393,7 +396,7 @@
 					<img class="post-image" src="graphics/keion-and-aaron.jpg">
 					<p>I'll be in Aruba all of next week, so I hope to have some sweet photos from that trip up here soon. Also, I plan to make this UI not nearly as shitty sometime soon, so if you're ever on here and things don't look right, it could be because I'm changing things up. Love and miss you all. -Max
 					</p>
-					<div class="callout">
+					<!-- <div class="callout">
 						<div id="disqus_thread"></div>
 						<script>
 						/**
@@ -416,7 +419,7 @@
 						})();
 						</script>
 						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-					</div>
+					</div> -->
 				</div>
 				<div class="blog-post">
 					<h3>San Francisco Update <small>5/24/2016</small></h3>
@@ -529,9 +532,6 @@
 		<a href="index.html"><img src="graphics/headshot.jpg" class="img-circle img-responsive headshot"></a>
 	</div>
 <!-- </div> -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="libraries/jquery/js/jquery-1.9.0.min.js"></script>
 <script src="libraries/Gallery-master/js/jquery.blueimp-gallery.min.js"></script>
 <script src="libraries/Bootstrap-Image-Gallery-master/js/bootstrap-image-gallery.min.js"></script>
 <script id="dsq-count-scr" type="text/javascript" src="https://maxlancaster.disqus.com/count.js" async></script>
