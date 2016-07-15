@@ -171,6 +171,9 @@ html, body {
     margin-bottom: 20px;
 }
 
+.blog-post a:hover {
+    cursor:pointer;
+}
 .post-image {
     max-width: 90%;
     max-height: 90%;
