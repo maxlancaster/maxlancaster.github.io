@@ -5,13 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Max Lancaster</title>
 <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css">
 
 </head>
 <body>
 
 <div id="wrapper">
-		<div id="header">Coming soon</div>
-		</div>
+	<div id="left-sidebar" class="col-xs-2 headshot">
+			<a href="index.html"><img src="graphics/headshot.jpg" class="img-circle headshot"></a>
+	</div>
+	<div id="projects-header">Projects</div>
+<!-- 		<div id="header">Max Lancaster</div>
+		<div id="left-sidebar" class="col-xs-2">
+			<a href="index.html"><img src="graphics/headshot.jpg" class="img-circle img-responsive headshot"></a>
+		</div> -->
+	<div class="projects-content col-md-8">
+		<table class="table">
+		  <tr>
+		  	<td><img src="graphics/maslab.png"></td>
+		  	<td><p>We built the robot Pegala during MIT's 2015 Mobile Autonomous Systems Lab (MASLAB). It is completely autonomous and designed to find and pick up stacks of red and green cubes off an irregularly shaped field and drop them on a central platform. The code for the control system is written in C++, and we used OpenCV for image processing. MASLAB is an intense, four week robotics competition that takes place at MIT during Independent Activities Period in January. The 2015 game involved finding stacks of colored cubes on the field and putting them into various scoring zones.</p></td>
+		  	<td>
+		  		<a href="http://maslab.mit.edu/2015/"><span class="link-span">MASLAB</span></a>
+		  		<a href="https://github.com/maxlancaster/MASLAB"><span class="link-span">Code</span></a>
+		  	</td>
+		  </tr>
+		  <tr>
+		  	<td><img src="graphics/iShift.png"></td>
+		  	<td><p>iShift is an in-browser shift management tool for managers and employers. It is specifally designed to improve the organization and efficiency of employee management systems for small-scale businesses and organizations. The application allows users to set hours of operation, assign and manage employee shifts, and contact employees.</p></td>
+		  	<td>
+		  		<a href="http://ishift.herokuapp.com/"><span class="link-span">iShift</span></a>
+		  		<a href="https://github.com/sbard26/ishift"><span class="link-span">Code</span></a>
+		  	</td>
+		  </tr>
+		</table>
+	</div>
 </div>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="libraries/jquery/js/jquery-1.9.0.min.js"></script>

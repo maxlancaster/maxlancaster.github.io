@@ -13,7 +13,7 @@ html, body {
     position: absolute;
     z-index: 10;
     width: 600px;
-    height: 350px;
+    height: 400px;
     background: #eee;
     top: 50%;
     left: 25%;
@@ -26,6 +26,12 @@ html, body {
 
 #panel h1 {
 	font-weight: 300;
+    font-size: 45px;
+    margin-bottom: .2em;
+}
+
+#right-panel h1 {
+    font-weight: 300;
     font-size: 45px;
     margin-bottom: .2em;
 }
@@ -47,6 +53,14 @@ html, body {
     font-style: italic;
 }
 
+.right-panel-title {
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 20px;
+}
+
 .particles-js-canvas-el {
 	position:absolute;
 	overflow:hidden;
@@ -61,6 +75,7 @@ html, body {
 	display: table;
 	min-height: 100%;
 	min-width: 100%;
+    background-color: black;
 }
 
 #main-content {
@@ -76,6 +91,7 @@ html, body {
 }
 
 #right-sidebar {
+    z-index: 100;
     right: 10px;
     margin-top: 10px;
    	background:#d8b652;	
@@ -89,6 +105,32 @@ html, body {
     color: black;
 }
 
+#right-panel {
+    z-index: 100;
+    margin-top: 10px;
+    background:#d8b652; 
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    top: 58%;
+    right: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: -175px 0 0 -100px;
+    height: 250px;
+}
+
+#right-panel a {
+    display: block;
+    padding-top: 15px;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-style: italic;
+    color: #0066cc;
+    float:left; clear:left
+}
+
 #left-sidebar {
     margin-top: 10px;
     left: 0;
@@ -96,6 +138,7 @@ html, body {
     display: block;
     border-radius: 10px;
     box-sizing: border-box;
+    float: left;
 }
 
 .callout {
@@ -107,11 +150,6 @@ html, body {
     box-sizing: border-box;
 }
 
-#links-header {
-	text-align: center;
-	font-size: 40px;
-}
-
 #links-content {
 	position: relative;
 	left: 10px;
@@ -120,8 +158,37 @@ html, body {
 #header {
 	position: relative;
 	display: block;
-	background: white;
 	font-size: 80px;
+}
+
+#aboutme-header {
+    position: relative;
+    display: block;
+    font-size: 80px;
+    margin-left: 250px;
+    margin-top: 40px;
+    color: white;
+}
+
+.aboutme-content {
+    margin-top: 20px;
+    margin-left: 250px;
+    color: white;
+}
+
+#projects-header {
+    position: relative;
+    display: block;
+    font-size: 80px;
+    margin-left: 250px;
+    margin-top: 40px;
+    color: white;
+}
+
+.projects-content {
+    margin-top: 20px;
+    margin-left: 250px;
+    color: white;
 }
 
 .header-image {
@@ -146,9 +213,8 @@ html, body {
 .headshot {
     /*top: 10%;*/
     left: 0;
+    width: 170px;
     /*position: fixed;*/
-    border: 1px solid white;
-    outline-color: white;
 }
 
 .blog-post {
@@ -192,6 +258,7 @@ html, body {
 	bottom: 10px;
     width: 100%;
     position: absolute;
+    color: white;
 }
 
 .scrollToTop{
@@ -214,4 +281,19 @@ html, body {
 }
 .scrollToTop:hover{
     text-decoration:none;
+}
+
+td {
+    height: 100%;
+}
+
+td img {
+    width: 300px;
+}
+
+td a {
+    display: table;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
