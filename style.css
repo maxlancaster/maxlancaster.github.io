@@ -282,17 +282,15 @@ html, body {
     text-decoration:none;
 }
 
-td {
-    height: 100%;
+#projects_table {
+    max-width: 1200px;
 }
 
-td img {
+#projects_table img {
     width: 300px;
 }
 
-td a {
-    display: table;
-    position: relative;
-    height: 100%;
-    width: 100%;
+#cryptopals_table td {
+    white-space: nowrap;
+    padding: 4px;
 }
