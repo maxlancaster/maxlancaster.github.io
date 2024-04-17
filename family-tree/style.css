@@ -1,0 +1,128 @@
+body {
+    overflow: hidden;
+
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: green;
+  stroke-width: 3px;
+  }
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+.welcome {
+    border: 2px;
+    display: block;
+}
+
+#info_row {
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 5%;
+    opacity: 0.8;
+}
+
+#search_results_row {
+    pointer-events: none;
+    width: 100%;
+    position: fixed;
+    margin-left: 5%;
+}
+
+#tree_row {
+  margin-top: -50px;
+}
+
+#search_results {
+  padding-left: 15px;
+}
+
+#search_results_table {
+  pointer-events: fill;
+}
+
+#search_results td {
+  padding: 7px;
+  font-weight: bold;
+}
+
+#search_results a {
+  color: green;
+  cursor: pointer;
+}
+
+#title {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.info {
+    pointer-events: fill;
+    padding: 5%;
+    background-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    border-radius: 4px;
+}
+
+.info p {
+    font-weight: bold;
+    padding: 1%;
+
+}
+
+#input_group {
+  margin-left: 5%;
+}
+
+.navbar-form button {
+  margin-right: 5px;
+  border-radius: 4px !important;
+}
+
+.logo-center {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+#error_message {
+    color: red;
+    margin-left: 5%;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+#search_button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0px !important;
+}
+
+.navbar-header {
+  margin-left: 5% !important;
+}

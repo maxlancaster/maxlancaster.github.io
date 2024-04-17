@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <head>
+    <meta charset="utf-8">
+    <title>PBE Family Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+
+  <body>
+        <div class="navbar navbar-default navbar-static-top" id="navbar_one" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand logo-right">Phi Beta Epsilon Family Tree Explorer</div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-default" id="navbar_two">
+            <div class="navbar-form" id="input_section">
+                    <div class="input-group" id="input_group">
+                        <input type="text" class="form-control" placeholder="Search" id="search_input">
+                        <div class="input-group-btn">
+                            <button id="search_button" class="btn">Search</button>
+                            <button id="expand_all_button" class="btn">Expand All</button>
+                            <button id="collapse_all_button" class="btn">Collapse All</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row" id="search_results_row">
+            <div>
+                <div id="search_results">
+                    <table id="search_results_table">
+                        <tr id="results_row1"></tr>
+                        <tr id="results_row2"></tr>
+                        <tr id="results_row3"></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="info_row">
+            <div class="col-xs-2 visible-lg visible-md">
+                <div class="info">
+                    <div id="welcome">
+                        <p>Welcome to the PBE Family Tree Explorer</p>
+                        <p>Click a node to expand/collapse, drag to explore, or search above.</p>
+                        <p>If you notice a mistake, please email me at mlancast@mit.edu</p>
+                        <p>Last updated: Class of 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="tree_row">
+            <div id="tree-container"></div>
+        </div>
+	    <!-- load the d3.js library -->
+	    <script src="jquery-3.2.1.min.js"></script>
+	    <script src="d3.v3.min.js"></script>
+	    <script src="pbe_family_tree.js"></script>
+	    <script src="Family_tree.js"></script>
+        <script src="main.js"></script> 
+    </body>
+</html>
